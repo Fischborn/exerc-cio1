@@ -1,11 +1,9 @@
-/* Styles for the header section */
 .header {
   background-color: #676767;
   color: rgb(136, 134, 134);
   padding: 20px;
 }
 
-/* Styles for the navigation menu */
 .nav {
   display: flex;
   justify-content: space-between;
@@ -17,14 +15,12 @@
   margin-right: 15px;
 }
 
-/* Styles for the main content */
 .main-content {
   font-size: 16px;
   line-height: 1.5;
   padding: 20px;
 }
 
-/* Styles for the footer section */
 .footer {
   background-color: #f4f4f4;
   padding: 15px;
