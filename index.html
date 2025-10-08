@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Página Simples</title>
+  <style>
+    /* Reset simples */
+    *{box-sizing:border-box;margin:0;padding:0}
+    html,body{height:100%}
+    body{
+      font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      line-height:1.5;
+      color:#222;
+      background:linear-gradient(180deg,#f7fafc,#ffffff);
+      padding:24px;
+    }
+
+    /* Container central */
+    .container{
+      max-width:1000px;
+      margin:0 auto;
+      background:#fff;
+      border-radius:12px;
+      box-shadow:0 6px 18px rgba(23,23,23,0.08);
+      overflow:hidden;
+    }
+
+    header{
+      padding:28px 32px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:16px;
+      background:linear-gradient(90deg,#0ea5a4,#06b6d4);
+      color:white;
+    }
+    header h1{font-size:20px;letter-spacing:0.4px}
+    nav a{color:rgba(255,255,255,0.95);text-decoration:none;margin-left:16px;font-weight:600}
+
+    .hero{
+      padding:36px 32px;
+      display:flex;
+      gap:24px;
+      align-items:center;
+      flex-wrap:wrap;
+    }
+    .hero .text{flex:1;min-width:240px}
+    .hero h2{font-size:26px;margin-bottom:8px}
+    .hero p{color:#475569}
+    .btn{
+      display:inline-block;padding:10px 16px;border-radius:10px;background:#0ea5a4;color:#062c33;font-weight:700;text-decoration:none;margin-top:12px;
+      box-shadow:0 6px 12px rgba(14,165,164,0.18);
+    }
+
+    .cards{
+      display:grid;grid-template-columns:repeat(3,1fr);gap:18px;padding:20px 32px 36px;
+    }
+    .card{
+      background:#fbfdff;border-radius:10px;padding:16px;box-shadow:0 4px 10px rgba(2,6,23,0.04);
+    }
+    .card h3{margin-bottom:8px;font-size:16px}
+    .card p{font-size:14px;color:#6b7280}
+
+    footer{padding:18px 32px;background:#f8fafc;color:#475569;text-align:center;font-size:14px}
+
+    /* responsividade */
+    @media (max-width:800px){
+      .cards{grid-template-columns:repeat(2,1fr)}
+    }
+    @media (max-width:520px){
+      header{flex-direction:column;align-items:flex-start}
+      .cards{grid-template-columns:1fr}
+      .hero{padding:20px}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>teste</h1>
+      <nav>
+        <a href="#">Início</a>
+        <a href="#">Sobre</a>
+        <a href="#">Contato</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="text">
+        <h2>Uma página </h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia, hic. Ipsum nihil explicabo atque eos obcaecati vitae, harum corporis, 
+        expedita natus mollitia earum rerum sint, consequuntur id voluptatibus dolore facilis!</p>
+        <a class="btn" href="#">Ação principal</a>
+      </div>
+      <div class="image" aria-hidden="true" style="min-width:180px;max-width:240px">
+        <!-- Ilustração simples com CSS -->
+        <svg viewBox="0 0 200 160" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg">
+          <rect rx="12" width="100%" height="100%" fill="#ecfeff"/>
+          <circle cx="60" cy="60" r="28" fill="#06b6d4"/>
+          <rect x="110" y="40" width="68" height="24" rx="6" fill="#0ea5a4"/>
+          <rect x="110" y="72" width="48" height="18" rx="4" fill="#34d399"/>
+        </svg>
+      </div>
+    </section>
+
+    <section class="cards">
+      <article class="card">
+        <h3>Card 1</h3>
+        <p>lllllllllllllllllllllllllllllll</p>
+      </article>
+      <article class="card">
+        <h3>Card 2</h3>
+        <p>lllllllllllllllllllllllllllllll.</p>
+      </article>
+      <article class="card">
+        <h3>Card 3</h3>
+        <p>lllllllllllllllllllllllllllllll.</p>
+      </article>
+    </section>
+
+    <footer>
+      @111224444113
+    </footer>
+   <!-- Imagem abaixo de tudo -->
+  <img 
+    src="121.jpg" 
+    alt="juninho"
+    style="display:block;margin:40px auto;max-width:400px;border-radius:10px;"
+  />
+</body>
+</html>
+
